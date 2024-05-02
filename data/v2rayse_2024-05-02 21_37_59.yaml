@@ -1,11 +1,10 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Clash.Meta
-# 创建时间：2024-05-02 21:48:28
+# 客户端：Clash
+# 创建时间：2024-05-02 22:01:19
 # 使用模版：V2RaySE 默认模版
-# 节点数量：4
+# 节点数量：3
 ####################################
-# !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
 allow-lan: true
 log-level: info
@@ -22,7 +21,6 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"vl-ws+tls","type":"vless","server":"pregoone.one","port":35453,"uuid":"3da5a095-9896-4535-fae4-eb0b316e3941","tls":true,"network":"tcp","alpn":["http/1.1","h2"]}
   - {"name":"vmess+ws_1","type":"vmess","server":"pregoone.one","port":8880,"cipher":"auto","uuid":"116b958a-6d32-42ea-df5f-d0f49f655e0a","tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/"}}
   - {"name":"vmess+tls","type":"vmess","server":"pregoone.one","port":57323,"cipher":"auto","uuid":"a4f55518-564c-4c45-ec3f-22e8d1d95013","tls":true,"skip-cert-verify":true,"servername":"","network":"tcp"}
   - {"name":"vmess+ws_2","type":"vmess","server":"pregoone.one","port":18790,"cipher":"auto","uuid":"1cd8a303-70c6-49df-8f80-5509a0119ea4","tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
@@ -32,7 +30,6 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - vl-ws+tls
       - vmess+ws_1
       - vmess+tls
       - vmess+ws_2
@@ -42,7 +39,6 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - vl-ws+tls
       - vmess+ws_1
       - vmess+tls
       - vmess+ws_2
@@ -52,7 +48,6 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - vl-ws+tls
       - vmess+ws_1
       - vmess+tls
       - vmess+ws_2
@@ -61,7 +56,6 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - vl-ws+tls
       - vmess+ws_1
       - vmess+tls
       - vmess+ws_2
@@ -70,7 +64,6 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - vl-ws+tls
       - vmess+ws_1
       - vmess+tls
       - vmess+ws_2
@@ -79,7 +72,6 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - vl-ws+tls
       - vmess+ws_1
       - vmess+tls
       - vmess+ws_2
@@ -105,7 +97,6 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - vl-ws+tls
       - vmess+ws_1
       - vmess+tls
       - vmess+ws_2
