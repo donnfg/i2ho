@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2024-05-02 21:32:04
+# 创建时间：2024-05-02 21:48:28
 # 使用模版：V2RaySE 默认模版
-# 节点数量：5
+# 节点数量：4
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -26,7 +26,6 @@ proxies:
   - {"name":"vmess+ws_1","type":"vmess","server":"pregoone.one","port":8880,"cipher":"auto","uuid":"116b958a-6d32-42ea-df5f-d0f49f655e0a","tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/"}}
   - {"name":"vmess+tls","type":"vmess","server":"pregoone.one","port":57323,"cipher":"auto","uuid":"a4f55518-564c-4c45-ec3f-22e8d1d95013","tls":true,"skip-cert-verify":true,"servername":"","network":"tcp"}
   - {"name":"vmess+ws_2","type":"vmess","server":"pregoone.one","port":18790,"cipher":"auto","uuid":"1cd8a303-70c6-49df-8f80-5509a0119ea4","tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"vmess+ws_3","type":"vmess","server":"pregoone.one","port":18790,"cipher":"auto","uuid":"1cd8a303-70c6-49df-8f80-5509a0119ea4","tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -37,7 +36,6 @@ proxy-groups:
       - vmess+ws_1
       - vmess+tls
       - vmess+ws_2
-      - vmess+ws_3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -48,7 +46,6 @@ proxy-groups:
       - vmess+ws_1
       - vmess+tls
       - vmess+ws_2
-      - vmess+ws_3
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -59,7 +56,6 @@ proxy-groups:
       - vmess+ws_1
       - vmess+tls
       - vmess+ws_2
-      - vmess+ws_3
   - name: 📲 电报信息
     type: select
     proxies:
@@ -69,7 +65,6 @@ proxy-groups:
       - vmess+ws_1
       - vmess+tls
       - vmess+ws_2
-      - vmess+ws_3
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -79,7 +74,6 @@ proxy-groups:
       - vmess+ws_1
       - vmess+tls
       - vmess+ws_2
-      - vmess+ws_3
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -89,7 +83,6 @@ proxy-groups:
       - vmess+ws_1
       - vmess+tls
       - vmess+ws_2
-      - vmess+ws_3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -116,7 +109,6 @@ proxy-groups:
       - vmess+ws_1
       - vmess+tls
       - vmess+ws_2
-      - vmess+ws_3
 
 rules:
 # 本地/局域网地址
